@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic Project Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            color: #666;
+            line-height: 1.8;
+        }
+        ul {
+            list-style-type: square;
+            margin: 20px 0;
+            padding-left: 20px;
+            color: #666;
+        }
+        .code {
+            background-color: #f9f9f9;
+            border-left: 4px solid #ccc;
+            padding: 10px;
+            margin: 20px 0;
+            font-family: "Courier New", Courier, monospace;
+            overflow-x: auto;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #0083F5; /* Zig's trademark blue color */
+            color: #fff; /* White text color for contrast */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Controlled obstacle detector</h1>
+
+    <h2></h2>
+    <p>
+        This was my simple intention to reproduce the obstacle detection robot but with an ability to intelligently clean the space. It has 2 wheels, ultrasonic sensor as the detection eye.
+        Lack of required mechanical parts faced during the development. Functionalities are almost completed, however certain mechanical constraints are still there which will explain at end.
+    </p>
+    
+    <h2>Roadmap</h2>
+    <ul>
+        <li>Design and build the robot's hardware structure.</li>
+        <li>Implement software to control the robot's movements.</li>
+        <li>Integrate sensors for obstacle detection and navigation.</li>
+        <li>Test the robot's functionality in different scenarios.</li>
+    </ul>
+    
+    <h2>Components Used</h2>
+    <ul>
+        <li> Arduino Uno R3/ 328p</li>
+        <li> 2  Hobby [BO] Gearmotor </li>
+        <li> Ultrasonic sensor[HC-sr04] </li>
+        <li>  DC Motor </li>
+        <li> Power Supply: as required to drive the load</li>
+        <li> Chassis </li>
+    </ul>
+    
+    <h2>Build Process</h2>
+    <p>
+        The first step in the project was to design the robot's chassis. 
+        There are pre-designed 3D priable CAD models available. I've ordered the chassis from a popular online store.
+        Ensure the chasis would accommodate all components securely.
+    </p>
+    
+    <div class="image-container">
+        <img src="cleaner_bot/cleaner_bot.jpg" width = "300" height = "300" >
+        <p>Figure 1: Initial chassis design</p>
+
+    </div>
+
+    <p>
+        After completing the design, I proceeded with assembling the components. The microcontroller was mounted on the chassis, 
+        followed by the motors.Printing the circuit on a PCB results in a more compact design. But Due to the lack of circuit printing services, I used 
+        the jumper wires to connect between, which is roomier. Thus struggled to debug and there is more chances to mis-wiring. 
+        For successfull outcome pcb is preffered. 
+        
+    </p>
+    <div class="image-container">
+        <img src="cleaner_bot/schematics.png" width = "400" height = "400" >
+        <p>Figure 1: circit diagram</p>
+    </div>
+
+
+    <div class="code">
+        <p>Firmware:</p>
+        <p>The firmware contains the functions for various controlling motions like forward, backward, left, etc and the distance detection function. One should incoporate both to get intelligent movement of the bot.</p>
+        <p>The firmware is hosted on GitHub, where you can find the source code, documentation, and instructions for building and deploying the firmware. Visit the following link to explore the project:</p>
+
+        <p><a href="https://github.com/albpy/ziglearn/tree/main" target="_blank">GitHub Repository: ziglearn</a></p>
+    </div>
+
+    <h2>Testing and Results</h2>
+    <p>
+        Once the assembly and coding were complete, you can the robot in various environments to ensure it performed as expected. 
+        The robot was able to successfully navigate around obstacles and reach its destination. Currently the breadboard jumper design is not much efficient and 
+        a compact pcb design will be updated. 
+    </p>
+    
+    <div class="image-container">
+        <img src="cleaner_bot/bot.jpeg" alt="Robot in Action" width = "100" height = "100">
+        <p>Figure 2: Robot breadboard assembling</p>
+    </div>
+
+    <p>
+        This was a great experience. It provided insights into electronics and programming. I look forward to further refining the design and adding more features in the future.
+    </p>
+</div>
+<footer>
+    <p>Powered by Zig</p>
+</footer>
+</body>
+</html>

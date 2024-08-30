@@ -1,0 +1,4 @@
+1. Parse ipv4 address
+    a) use of Address.resolveIp to parse address and port.
+        Address - c type union and resolveIp is it's method
+        

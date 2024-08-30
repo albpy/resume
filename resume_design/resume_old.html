@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .header-left, .header-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-center {
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .contact-info {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .contact-info a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            background-color: #e6f2ff; /* Light blue background color */
+
+        }
+        .job {
+            margin-bottom: 20px;
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #34495e;
+        }
+        .job-date {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.skills {
+            columns: 3;
+            list-style-type: disc; /* Ensure bullets are displayed */
+            padding-left: 20px; /* Add padding to indent the bullets */
+
+        }
+        ul.skills li {
+            margin-bottom: 5px;
+        }
+        ul.experience {
+           padding-left: 20px; /* Adjust as needed */
+        }
+        ul.experience li {
+            margin-bottom: 10px;
+            list-style-type: disc;
+            padding-left: 30px;
+            margin-left: -5px;
+        }
+        ul.experience li ul li{
+            margin-bottom: 10px;
+            list-style-type: circle; /* Change bullet type for sub-lists */
+            padding-left: 40px; /* Further indent the sub-bullets */
+        }
+        .education-list{
+            list-style-type: disc; /* This gives the standard bullet point */
+            padding-left: 20px; /* Adjust this value to control the bullet's distance from the left margin */
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <p class="contact-info">+91 7559083324</p>
+            <p class="contact-info"><a href="https://github.com/albpy" target="_blank">Albpy (github.com)</a></p>
+        </div>
+        <div class="header-center">
+            <h1>Albin George Jose</h1>
+            <p><em>(Data science and Machine Learning)</em></p>
+
+        </div>
+        <div class="header-right">
+            <p class="contact-info"><a href="mailto:albinjos64@gmail.com">albinjos64@gmail.com</a></p>
+            <p class="contact-info"><a href="https://www.linkedin.com/in/albinjose" target="_blank">Albin Jose | LinkedIn</a></p>
+        </div>
+    </header>
+    <section>
+        <h2 class="section-title">SOFTWARE DEVELOPER</h2>
+        <p>Highly driven Software developer with 16 months of experience in designing, developing and maintaining software systems. Proficient in various programming languages such as C++ and python. Demonstrating strong problem solving abilities, attention to detail and innovative thinking in creating efficient software solutions. Ability to use versatile coding skills to make resourceful software in modern programming languages. Added experience on handling python and Machine learning libraries will fuel conventional software development. Able to deliver clean coding practices along with data structures and algorithms, both compiled and interpreted languages. I'm motivated to be a part of an organization, where I can contribute to the growth of the institution by further honing my problem solving and coding skills.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">SKILLS</h2>
+        <ul class="skills">
+            <li>Python Programming</li>
+            <li>Fastapi</li>
+            <li>TensorFlow</li>
+            <li>SQL-Stored proc</li>
+            <li>Image Processing</li>
+            <li>ANNs and CNNs</li>
+            <li>Scikit-learn</li>
+            <li>Polars-pandas</li>
+            <li>Data Science Theory</li>
+            <li>Natural Language Processing</li>
+            <li>CPP</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title">EXPERIENCES</h2>
+        <div class="job">
+            <div class="job-title">Software Developer</div>
+            <div class="job-date">Rebo Solutions | Dec 2023 - July 2024</div>
+            <ul class="experience">
+                <li>Developed multiple modules for logistics and Supply chain software
+                    <ul>
+                        <li>Designed and implemented inventory management system to track stock levels, orders, and deliveries, improving operational efficiency by 30%.</li>
+                        <li>Created a real-time shipment tracking module using GPS and IoT technologies, providing up-to-date information on shipment status and location.</li>
+                        <li>Developed automated order processing workflows to streamline order fulfillment, reducing manual errors and processing time by 25%.</li>
+                        <li>Integrated third-party APIs for enhanced functionality, including payment gateways and external logistics services, ensuring seamless transactions and communications.</li>
+                        <li>Conducted thorough testing and debugging to ensure software reliability and performance under various conditions and loads.</li>
+                        <li>Collaborated with cross-functional teams, including designers, product managers, and other developers, to ensure alignment with project goals and timelines.</li>
+                        <li>Provided technical support and maintenance for deployed modules, addressing user issues and implementing improvements based on feedback.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Education</h2>
+            <ul class="education-list">
+                <li>
+                    <strong>Bachelor of Technology, Mechanical Engineering</strong> - BTU, 2018
+                </li>
+            </ul>    
+    </section>
+
+    <!-- Add more sections as needed -->
+
+</body>
+</html>

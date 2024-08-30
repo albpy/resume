@@ -1,0 +1,415 @@
+/* =======================================================================
+Template Name: Dil Hospital
+Author:  SmartEye Adminpanel
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for web template
+======================================================================= */
+/* ===================================== Import Less ================================== */
+  @font-face {
+    font-family: 'mouse-300';
+    src: url("../fonts/RobotoSlab-Regular.ttf") format("truetype"); }
+  @font-face {
+    font-family: 'mouse-500';
+    src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype"); }
+  /* ===================================== Basic CSS ================================== */
+  * {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+
+  img {
+    max-width: 100%; }
+
+  a {
+    text-decoration: none;
+    outline: none;
+    color: #444; }
+
+  a:hover {
+    color: #444; }
+
+  ul {
+    margin-bottom: 0;
+    padding-left: 0; }
+
+  a:hover,
+  a:focus,
+  input,
+  textarea {
+    text-decoration: none;
+    outline: none; }
+
+  .center {
+    text-align: center; }
+
+  .left {
+    text-align: left; }
+
+  .right {
+    text-align: right; }
+
+  .cp {
+    cursor: pointer; }
+
+  html, body {
+    height: 100%; }
+
+  p {
+    margin-bottom: 0px;
+    width: 100%; }
+
+  .no-padding {
+    padding: 0px; }
+
+  .no-margin {
+    margin: 0px; }
+
+  .hid {
+    display: none; }
+
+  .top-mar {
+    margin-top: 15px; }
+
+  .h-100 {
+    height: 100%; }
+
+  ::placeholder {
+    color: #747f8a !important;
+    font-size: 13px;
+    opacity: .5 !important; }
+
+  .container-fluid {
+    padding: 0px; }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+  strong {
+    font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+  body {
+    background-color: #f7f7ff !important;
+    font-family: "mouse-300", Arial, Helvetica, sans-serif;
+    color: #6A6A6A; }
+
+  .session-title {
+    padding: 30px;
+    margin: 0px; }
+    .session-title h2 {
+      width: 100%;
+      text-align: center; }
+    .session-title p {
+      max-width: 850px;
+      text-align: center;
+      float: none;
+      margin: auto; }
+    .session-title span {
+      float: right;
+      font-style: italic; }
+
+  .inner-title {
+    padding: 20px;
+    padding-left: 0px;
+    margin-bottom: 30px; }
+    .inner-title h2 {
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+      font-family: "slab", Arial, Helvetica, sans-serif; }
+    .inner-title p {
+      width: 100%;
+      text-align: center; }
+
+  .page-nav {
+    padding: 40px;
+    text-align: center;
+    padding-top: 160px; }
+    .page-nav ul {
+      float: none;
+      margin: auto; }
+    .page-nav h2 {
+      font-size: 36px;
+      width: 100%;
+      color: #444; }
+      @media screen and (max-width: 600px) {
+        .page-nav h2 {
+          font-size: 26px; } }
+    .page-nav ul li {
+      float: left;
+      margin-right: 10px;
+      margin-top: 10px;
+      font-size: 16px; }
+      .page-nav ul li i {
+        width: 30px;
+        text-align: center;
+        color: #444; }
+      .page-nav ul li a {
+        color: #444; }
+
+  .btn-success {
+    background-color: #00ab9f;
+    border-color: #00ab9f; }
+    .btn-success:hover {
+      background-color: #00ab9f !important;
+      border-color: #00ab9f !important; }
+    .btn-success:active {
+      background-color: #00ab9f !important;
+      border-color: #00ab9f !important; }
+    .btn-success:focus {
+      background-color: #00ab9f !important;
+      border-color: #00ab9f !important;
+      box-shadow: none !important; }
+
+  .btn-info {
+    background-color: #4f6dcd;
+    border-color: #4f6dcd; }
+    .btn-info:hover {
+      background-color: #4f6dcd !important;
+      border-color: #4f6dcd !important; }
+    .btn-info:active {
+      background-color: #4f6dcd !important;
+      border-color: #4f6dcd !important; }
+    .btn-info:focus {
+      background-color: #4f6dcd !important;
+      border-color: #4f6dcd !important;
+      box-shadow: none !important; }
+
+  .btn {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px; }
+
+  .form-control:focus {
+    box-shadow: none !important;
+    border: 2px solid  #00a8df; }
+
+  .btn-light {
+    background-color: #FFF;
+    color: #3F3F3F; }
+
+  .collapse.show {
+    display: block !important; }
+
+  .form-control:focus {
+    box-shadow: none;
+    border: 2px solid #0d7a40 !important; }
+
+  .form-control {
+    background-color: #F8F8F8;
+    margin-bottom: 20px; }
+    .form-control:focus {
+      background-color: #FFF;
+      border-color: #CCC; }
+
+  .container {
+    max-width: 1100px; }
+    @media screen and (max-width: 1060px) {
+      .container {
+        max-width: 100%;
+        overflow: hidden; } }
+
+  @media screen and (max-width: 1060px) {
+    .overcover {
+      padding: 10px; } }
+
+/* ===================================== Header CSS ================================== */
+.profile-box .styl-bb {
+  position: absolute;
+  width: 50px;
+  height: 250px;
+  background-color: #fbb347;
+  top: -20px;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.profile-box .styl-bb::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -25%;
+  left: -25%;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(255, 255, 255, 0.1) 45%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0.1) 55%,
+      transparent
+  );
+  animation: shineVertical 10s infinite linear;
+}
+
+@keyframes shineVertical {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+  .profile-box .scov {
+    z-index: 999; }
+    .profile-box .scov ul li {
+      display: flex;
+      margin: auto;
+      padding: 10px;
+      padding-left: 0px;
+      font-size: .9rem; }
+      .profile-box .scov ul li i {
+        width: 50px;
+        text-align: center;
+        color: #FFF; }
+      .profile-box .scov ul li .icon {
+        margin: auto;
+        width: 50px;
+        font-size: 16px; }
+      .profile-box .scov ul li .detail {
+        padding-left: 10px;
+        flex-grow: 1; }
+
+.profile-go img {
+  width: 100%; 
+  /* filter: grayscale(100%) sepia(50%); */
+  border-radius: 50%; /* Circular crop */
+  border: 5px solid #007bff; /* Border color */
+  width: 200px; /* Fixed size */
+  height: 200px; /* Fixed size */
+  object-fit: cover; /* Ensure image covers the area */
+  box-shadow: 0 4px 8px rgba(255, 153, 0, 0.3), /* Shadow with touch of #FF9900 for depth */
+  inset 0 0 15px rgba(255, 153, 0, 0.5); /* Inner shadow with touch of #FF9900 */  animation:  fadeInWithBorder 1.5s ease-out;
+  animation: subtlePulse 10s infinite ease-in-out;
+  position: relative; /* For the overlay */
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+@keyframes fadeInWithBorder {
+  0% {
+    opacity: 0;
+    border-width: 0;
+  }
+  100% {
+    opacity: 1;
+    border-width: 3px;
+  }
+}
+.profile-go img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+.profile-go h2 {
+  font-size: 1.4rem; }
+.profile-go p {
+  font-size: .9rem;
+  text-align: justify; }
+.profile-go .datadiv {
+  padding-left: 0px; }
+  @media screen and (max-width: 924px) {
+    .profile-go .datadiv {
+      padding-left: 15px; } }
+@media screen and (max-width: 924px) {
+  .profile-go {
+    padding: 20px; }
+    .profile-go img {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
+
+.more-detail {
+  margin-top: 40px; 
+  display : flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
+  .more-detail .education h3 {
+    font-size: 1.4rem;
+    color: #fbb347;
+    margin-bottom: 10px;
+    margin-top: 25px; }
+    .more-detail .education h3 i {
+      margin-right: 5px; }
+  .more-detail .education ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    /* padding-left: 0px;  */
+    /* margin-left: 0px; */
+  }
+    .more-detail .education ul li {
+      margin: 20px;
+      /* margin-left: 70px; */
+      margin-bottom: 10px;
+    padding-left: 30px; }
+      .more-detail .education ul li b {
+        display: block;
+        text-align: left;
+        font-size: 1.1rem;
+        color: #0047AB; }
+      .more-detail .education ul li p {
+        margin: 0;
+        font-size: .9rem;
+        margin-bottom: 0px; }
+      .more-detail .education ul li span {
+        font-size: .8rem;
+        text-decoration: italic; }
+  .more-detail .bd-ro {
+    padding-left: 30px;
+    font-size: .9rem;
+    margin-bottom: 10px; }
+    .more-detail .bd-ro span {
+      float: right;
+      font-weight: 600; }
+
+  .skill-set {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Base gap between items */
+        text-align: right;
+        list-style-type: none;
+        padding-left: 50px; 
+        margin-right: 20px;
+        margin-bottom: 10px;
+      }
+      
+  .skill-set > div {
+        /* Optional: Add padding or margins to individual items if needed */
+      }
+      
+  .skill-set > div:nth-child(1) {
+        margin-right: 170px; /* Larger gap after the first item */
+      }
+      
+  .skill-set > div:nth-child(2) {
+        margin-right: 50px; /* Smaller gap after the second item */
+      }
+  
+  .skill-set > div:nth-child(3) {
+        margin-right: 50px; /* Smaller gap after the second item */
+      }
+      
+
+.activity ul {
+  padding-left: 55px !important; }
+.activity li {
+  float: left;
+  padding: 6px;
+  width: 50%;
+  list-style: disc; }
+
+.aars ul li {
+  width: 50%;
+  float: left; }
+  @media screen and (max-width: 522px) {
+    .aars ul li {
+      width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
